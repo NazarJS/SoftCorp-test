@@ -2,13 +2,15 @@
     &-screen {
         position: relative;
         line-height: 0;
-        // padding-top: 200px;
-        // background-image: url("../images/main-bg.png");
+        padding: 200px 0;
+        background-image: url("../images/main-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     &-info {
-        position: absolute;
-        top: 200px;
+        // position: absolute;
+        // top: 200px;
         max-width: 780px;
         line-height: 1.2;
         &-title {
@@ -85,8 +87,15 @@
         line-height: 0;
         padding-top: 120px;
         padding-bottom: 150px;
-        &-container {
-           
+        background-position: center;
+        background-size: cover;
+        &-wrap {
+            position: relative;
+            max-width: 209px;
+            flex: 0 0 209px;
+            text-align: center;
+
+
         }
 
         &-title {
@@ -114,9 +123,18 @@
             position: relative;
             width:100px;
             height: 100px;
+            margin-bottom: 20px;
             border-radius: 50%;
             border: 5px solid #286690;
             background-color:#3E9CDC;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url("../images/svg/main-order-dots.svg");
+                width: 100%;
+                height: 6px;
+            }
 
             &-img {
                 position: absolute;
@@ -125,23 +143,28 @@
                 transform: translate(-50%,-50%);
             }
 
-            &-txt {
-                position: absolute;
-                bottom: -20px;
-                left: 50%;
-                transform: translate(-50%,0);
+            &-subtitle {
+                line-height: 1.2;
                 color: #ffffff;
             }
+
+           
         }
 
         &-row {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             margin-bottom: 100px;
         }
 
         &-dots {
             display: flex;
+            // white-space: nowrap;
+            position: absolute;
+            top: 50%;
+            left: 110%;
+            transform: translate(0,-50%);
         }
 
         &-dot {
@@ -203,6 +226,7 @@
             width: 370px;
             height: 48px;
             line-height: 46px;
+            cursor: pointer;
         }
 
         &-box {
