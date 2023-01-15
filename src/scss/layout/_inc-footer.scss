@@ -1,0 +1,44 @@
+.footer {
+    padding: 30px 0;
+    background-color: #3D4050;
+    font-size: rem(13);
+    color: #ffffff;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-pay {
+        display: flex;
+        justify-content: space-between;
+
+        &-img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+            img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+
+        &-name {
+            display: inline-block;
+        }
+
+        &-line {
+            width: 1px;
+            height: 18px;
+            background-color: #C3C3C3;
+        }
+    }
+
+    &-middle {
+        align-items: center;
+        flex: 0 0 40.5%;
+        max-width: 40.5%;
+    }
+
+    
+}
