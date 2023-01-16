@@ -1,4 +1,4 @@
-<!--#include file="inc-header.html"-->
+@@include('inc-header.html')
 
 <div class="middle" id="middle">
   <div class="main">
@@ -45,24 +45,29 @@
             <div class="main-order-wrap">
               <div class="main-order-item">
                 <img class="main-order-item-img" src="./images/svg/main-order-svg.svg" alt="alt" loading="lazy">
-                <!-- <div class="main-order-dots">
+                <div class="main-order-dots">
                   <div class="main-order-dot"></div>
                   <div class="main-order-dot"></div>
                   <div class="main-order-dot"></div>
                   <div class="main-order-dot"></div>
                   <div class="main-order-dot"></div>
-                </div> -->
+                </div>
               </div>
               <div class="main-order-item-subtitle">
                 Lorem ipsum dolorsit amet
               </div>
-
-              
             </div>
 
             <div class="main-order-wrap">
               <div class="main-order-item">
                 <img class="main-order-item-img" src="./images/svg/main-order-svg1.svg" alt="alt" loading="lazy">
+                <div class="main-order-dots">
+                  <div class="main-order-dot"></div>
+                  <div class="main-order-dot"></div>
+                  <div class="main-order-dot"></div>
+                  <div class="main-order-dot"></div>
+                  <div class="main-order-dot"></div>
+                </div>
               </div>
               <div class="main-order-item-subtitle">
                 Сonsecteturadipiscing elit
@@ -72,6 +77,13 @@
             <div class="main-order-wrap">
               <div class="main-order-item">
                 <img class="main-order-item-img" src="./images/svg/main-order-svg2.svg" alt="alt" loading="lazy">
+                <div class="main-order-dots">
+                  <div class="main-order-dot"></div>
+                  <div class="main-order-dot"></div>
+                  <div class="main-order-dot"></div>
+                  <div class="main-order-dot"></div>
+                  <div class="main-order-dot"></div>
+                </div>
               </div>
               <div class="main-order-item-subtitle">
                 Sed do eiusmod tempor
@@ -81,6 +93,13 @@
             <div class="main-order-wrap">
               <div class="main-order-item">
                 <img class="main-order-item-img" src="./images/svg/main-order-svg3.svg" alt="alt" loading="lazy">
+                <div class="main-order-dots">
+                  <div class="main-order-dot"></div>
+                  <div class="main-order-dot"></div>
+                  <div class="main-order-dot"></div>
+                  <div class="main-order-dot"></div>
+                  <div class="main-order-dot"></div>
+                </div>
               </div>
               <div class="main-order-item-subtitle">
                 Esse cillum doloreeu fugiat
@@ -122,33 +141,39 @@
             
           </div>
 
-          <form action="">
+          <form action="" class="mian-order-form">
             <div class="row mb-30">
-              <div class="col-4">
-                <select name="" id="">
-                  <option value="1" selected>1</option>
-                  <option value="1">1</option>
-                  <option value="1">1</option>
-                  <option value="1">1</option>
+              <div class="col-sm-4">
+                <select name="" id="" class="main-order-select">
+                  <option value="1" selected>Выберите тип системы</option>
+                  <option value="1">Nemo enim ipsam</option>
+                  <option value="1">Et harum quidem</option>
+                  <option value="1">Temporibus autems</option>
+                  <option value="1">Выберите тип системы</option>
+                  <option value="1">Nemo enim ipsam</option>
+                  <option value="1">Et harum quidem</option>
+                  <option value="1">Temporibus autems</option>
                 </select>
               </div>
   
-              <div class="col-4">
+              <div class="col-sm-4">
                 <input type="text" class="main-order-input" placeholder="Ваш e-mail">
               </div>
   
-              <div class="col-4">
+              <div class="col-sm-4">
                  <input type="text" class="main-order-input" placeholder="Ваше имя">
               </div>
             </div>
             <div class="row mb-55">
-              <div class="col-8"></div>
-              <div class="col-4">
+              <div class="col-sm-8">
+                <input type="range" class="main-order-range">
+              </div>
+              <div class="col-sm-4">
                 <label for="myfile" class="main-order-load">
                   <img src="./images/svg/main-order-load.svg" alt="alt" loading="lazy">
                   Прикрепить файл
                 </label>
-                <input type="file" class="" id="myfile" name="myfile" multiple="">
+                <input type="file" class="main-order-load-input" id="myfile" name="myfile" multiple="">
               </div>
             </div>
 
@@ -165,5 +190,4 @@
 </div>
 
 
-
-<!--#include file="inc-footer.html"-->
+@@include('inc-footer.html')
