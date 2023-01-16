@@ -1,6 +1,5 @@
 /* base */
 @import "./base/mixin.scss";
-@import "./base/vars.scss";
 @import "./base/typography.scss";
 @import "./base/grid.scss";
 
@@ -35,7 +34,7 @@ body {
   padding: 0;
   height: 100%;
   min-height: 100%;
-  font-family: $fontNun;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: rem(16);
   line-height: 1.42;
