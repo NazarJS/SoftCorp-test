@@ -404,6 +404,26 @@
                 color: #ee2742;
                 top: 11px;
             }
+<<<<<<< HEAD
+=======
+        }
+
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            font-size: rem(18);
+            color: #ffffff;
+            line-height: 1.2;
+
+            &-txt {
+                
+            }
+
+            &-value {
+    
+            }
+>>>>>>> ac49227682dc60d2ba750cf63c33c01014acbad9
         }
 
         &-wrapper {
@@ -607,7 +627,10 @@
 
 .main-order-slidecontainer {
     width: 100%; /* Width of the outside container */
+<<<<<<< HEAD
     margin-bottom: 20px;
+=======
+>>>>>>> ac49227682dc60d2ba750cf63c33c01014acbad9
   }
   
   /* The slider itself */
