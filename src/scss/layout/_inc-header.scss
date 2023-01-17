@@ -1,10 +1,12 @@
 .header {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    padding: 32px 0;
-    background-color: #10101D;
-    opacity: 0.9;
+    &-body {
+        position: fixed;
+        z-index: 11;
+        width: 100%;
+        padding: 32px 0;
+        background-color: #10101D;
+        opacity: 0.9;
+    }
 
     &-logo {
         flex: 0 0 245px;
@@ -25,6 +27,7 @@
         position: relative;
         display: flex;
         justify-content: space-between;
+        transition: all 0.3s ease 0s;
     }
 
     &-menu {
@@ -98,31 +101,39 @@
     }
 
     &-mobile {
-        display: none;
-        // position: absolute;
-        // top: 100px;
+        opacity: 0;
+        visibility: hidden;
+        height: 100vh;
         width: 100%;
         padding: 0 40px;
         margin: 0 -40px;
         background-color: #10101d;
-        opacity: 0.9;
+        transition: all 0.3s ease 0s;
+        position: fixed;
     }
 
     .mobile-open {
-        .header {
-            &-container {
-                margin-bottom: 20px;
-            }
+        // opacity: 1;
 
+        .header {
             &-mobile {
-                display: block;
-    
-                ul li {
-                    margin-bottom: 10px;
+                opacity: 1;
+                overflow-y: auto;
+                text-align: center;
+                visibility: visible;
+                
+                ul {
+                    padding-top: 30px;
+
+                    li {
+                        margin-bottom: 20px;
+                        font-size: rem(20px);
+                    }
                 }
             }
 
             &-burger {
+
                 &::before {
                     transform: rotate(45deg);
                     top: 9px;
@@ -138,15 +149,5 @@
                 }
             }
         }
-
-        // .header-container {
-        //     margin-bottom: 20px;
-        // }
-
-        
-        
-
     }
-
-   
 }

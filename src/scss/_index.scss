@@ -330,7 +330,7 @@
             }
 
             &-cont {
-                
+
             @media(max-width:768px) {
                 margin-bottom: 20px;
             }
@@ -338,6 +338,7 @@
         }
 
         &-select {
+            
             @media(max-width:768px) {
                 margin-bottom: 20px;
             }
@@ -408,6 +409,7 @@
                 line-height: 1.2;;
                 // top: 11px;
             }
+
         }
 
         &-wrapper {
@@ -584,7 +586,7 @@
 .main-order-input::-webkit-input-placeholder {
     color: #272733;
     opacity:1;
-   } 
+} 
 
 .jq-selectbox__dropdown ul::-webkit-scrollbar {
     width: 0;
@@ -608,11 +610,6 @@
 //     overflow: -moz-scrollbars-none;
 //   }
 
-
-.main-order-slidecontainer {
-    width: 100%; /* Width of the outside container */
-    margin-bottom: 20px;
-  }
   
   /* The slider itself */
   .main-order-slider {
