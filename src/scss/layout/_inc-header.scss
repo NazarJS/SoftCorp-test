@@ -1,10 +1,12 @@
 .header {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    padding: 32px 0;
-    background-color: #10101D;
-    opacity: 0.9;
+    &-body {
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        padding: 32px 0;
+        background-color: #10101D;
+        opacity: 0.9;
+    }
 
     &-logo {
         flex: 0 0 245px;
@@ -25,6 +27,7 @@
         position: relative;
         display: flex;
         justify-content: space-between;
+        transition: all 0.3s ease 0s;
     }
 
     &-menu {
@@ -98,31 +101,37 @@
     }
 
     &-mobile {
-        display: none;
-        // position: absolute;
-        // top: 100px;
+        opacity: 0;
+        position: fixed;
+        height: 100%;
         width: 100%;
+        overflow-y: auto;
         padding: 0 40px;
         margin: 0 -40px;
         background-color: #10101d;
-        opacity: 0.9;
     }
 
     .mobile-open {
+        opacity: 1;
         .header {
-            &-container {
-                margin-bottom: 20px;
-            }
-
             &-mobile {
                 display: block;
+                opacity: 1;
+                text-align: center;
+                transition: all 0.3s ease 0s;
     
-                ul li {
-                    margin-bottom: 10px;
+                ul {
+                    padding-top: 30px;
+
+                    li {
+                        margin-bottom: 20px;
+                        font-size: rem(20px);
+                    }
                 }
             }
 
             &-burger {
+                
                 &::before {
                     transform: rotate(45deg);
                     top: 9px;
@@ -138,15 +147,5 @@
                 }
             }
         }
-
-        // .header-container {
-        //     margin-bottom: 20px;
-        // }
-
-        
-        
-
     }
-
-   
 }

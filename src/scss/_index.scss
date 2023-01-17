@@ -330,7 +330,7 @@
             }
 
             &-cont {
-                
+
             @media(max-width:768px) {
                 margin-bottom: 20px;
             }
@@ -408,6 +408,7 @@
                 line-height: 1.2;;
                 // top: 11px;
             }
+
         }
 
         &-wrapper {
@@ -608,11 +609,6 @@
 //     overflow: -moz-scrollbars-none;
 //   }
 
-
-.main-order-slidecontainer {
-    width: 100%; /* Width of the outside container */
-    margin-bottom: 20px;
-  }
   
   /* The slider itself */
   .main-order-slider {
