@@ -12,41 +12,29 @@
     })
 
     $(document).on("click", ".header-burger", function () {
-        if($(".qwe").hasClass("mobile-open")) {
-            console.log("1")
-            $(".qwe").removeClass("mobile-open")
+        if($(".toggle").hasClass("mobile-open")) {
+            $(".toggle").removeClass("mobile-open")
         }
         else {
-            console.log("2")
-            $(".qwe").addClass("mobile-open")
+            $(".toggle").addClass("mobile-open")
         }
     });
 
 
     $(document).ready(function () {
-        $(".main-oder-form").validate({
+        $(".main-order-form").validate({
           errorElement: "span",
           rules: {
             email: {
               required: true,
               email: true,
             },
-            telephone: {
-              required: true,
-              minlength: 12,
-              telephone: true,
-            },
+           
             name: {
               required: true,
               lettersonlyName: true,
             },
-            number: {
-              required: true,
-              number: true,
-            },
-            person: {
-              required: true,
-            },
+           
           },
           messages: {
             email: {
@@ -56,32 +44,30 @@
               required: "Введите имя",
               // lettersonlyName: "",
             },
-            telephone: {
-              required: "Введите ваш номер",
-              minlength: " ",
-            },
-            number: {
-              required: "Введите данные",
-            },
-            person: {
-              required: "Введите данные",
-            },
+            
           },
-          highlight: function(element, errorClass, validClass) {
-            $(element).addClass(errorClass).removeClass(validClass);
-            $(element).closest('.popup-backcall-inputs').find('.popup-icon')
-              .addClass(errorClass).removeClass(validClass);
-  
-          },
-          unhighlight: function(element, errorClass, validClass) {
-            $(element).removeClass(errorClass).addClass(validClass);
-            $(element).closest('.popup-backcall-inputs').find('.popup-icon')
-              .removeClass(errorClass).addClass(validClass);
-          }
+          
         });
   
   
   
   
       });
-  
+      jQuery.validator.addMethod(
+        "lettersonlyName",
+        function (value, element) {
+          return this.optional(element) || /^[a-zA-ZА-Яа-я\s]+$/i.test(value);
+        },
+        " "
+      );
+
+
+
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
