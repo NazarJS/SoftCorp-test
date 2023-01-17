@@ -39,6 +39,7 @@
           messages: {
             email: {
               required: "Введите ваш email",
+              email: "Введите корректный email",
             },
             name: {
               required: "Введите имя",

@@ -329,8 +329,11 @@
                 border: 1px solid #3e9cdc;
             }
 
+            &-cont {
+                
             @media(max-width:768px) {
                 margin-bottom: 20px;
+            }
             }
         }
 
@@ -402,7 +405,8 @@
             span.error {
                 position: relative;
                 color: #ee2742;
-                top: 11px;
+                line-height: 1.2;;
+                // top: 11px;
             }
         }
 
