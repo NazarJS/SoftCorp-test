@@ -11,19 +11,15 @@
   <title>SoftCorp</title>
   <link rel="icon" href="./images/favicon.svg">
 
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
-
+  <!-- add form styler  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.css" integrity="sha512-qP7Bo11vBMwOisDf5u5XX4EG7PwtuTha6Ghh864As/xLSKdD5BbW5gVE2Tym6VerZFEev9OmmHV2BKuanp/WaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.theme.min.css" integrity="sha512-KHRZlYOTiXpB0ZlmJrpqSZYxSl6XS8LJ7LoGFroB0BszBr6DcZYZK7C8oIfviPKmcDR0dI2ilaGxBAb4+0VsmA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"> -->
+
 
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -31,7 +27,7 @@
 <!-- wrapper -->
 <div class="wrapper" id="wrapper">
   <header class="header" id="header">
-    <div class="container  qwe">
+    <div class="container toggle">
       <div class="header-container">
         <a href="#" class="header-logo">
           <img src="./images/svg/header-svg.svg" alt="alt" loading="lazy">
@@ -45,8 +41,7 @@
           </ul>
         </div>
         <div class="header-burger">
-          <img src="./images/svg/header-burger.svg" alt="alt" loading="lazy" class="img-burger">
-          <img src="./images/x-button.png" alt="alt" loading="lazy" class="img-cross">
+          <div class="header-burger-span"></div>
         </div>
       </div>
       <div class="header-mobile">
@@ -177,34 +172,10 @@
                 Excepteur sint occaecat cupidatat non proident
               </div>
             </div>
-
-            
-
-            <!-- <div class="main-order-item">
-              <img class="main-order-item-img" src="./images/svg/main-order-svg1.svg" alt="alt" loading="lazy">
-            </div>
-
-            
-
-            <div class="main-order-item">
-              <img class="main-order-item-img" src="./images/svg/main-order-svg2.svg" alt="alt" loading="lazy">
-            </div>
-
-            
-
-            <div class="main-order-item">
-              <img class="main-order-item-img" src="./images/svg/main-order-svg3.svg" alt="alt" loading="lazy">
-            </div>
-
-           
-
-            <div class="main-order-item">
-              <img class="main-order-item-img" src="./images/svg/main-order-svg4.svg" alt="alt" loading="lazy">
-            </div> -->
             
           </div>
 
-          <form action="" class="mian-order-form">
+          <form action="" class="main-order-form">
             <div class="row mb-30">
               <div class="col-sm-4">
                 <select name="" id="" class="main-order-select">
@@ -220,16 +191,24 @@
               </div>
   
               <div class="col-sm-4">
-                <input type="text" class="main-order-input" placeholder="Ваш e-mail">
+                <input type="text" class="main-order-input" placeholder="Ваш e-mail" name="email">
               </div>
   
               <div class="col-sm-4">
-                 <input type="text" class="main-order-input" placeholder="Ваше имя">
+                 <input type="text" class="main-order-input" placeholder="Ваше имя" name="name">
               </div>
             </div>
             <div class="row mb-55">
               <div class="col-sm-8">
-                <input type="range" class="main-order-range">
+                <div class="main-order-slidecontainer">
+                  <div class="main-order-wrapper">
+                    <div class="main-order-wrapper-txt">
+                      Sed ut perspiciatis, unde omnis iste natus
+                    </div>
+                    <div class="main-order-wrapper-value"><span id="demo"></span>%</div>
+                  </div>
+                  <input type="range" min="1" max="100" value="50" class="main-order-slider" id="myRange">
+                </div>
               </div>
               <div class="col-sm-4">
                 <label for="myfile" class="main-order-load">
@@ -321,6 +300,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js" integrity="sha512-NQWLm7ozXeOcDB639QSEzUWiNDEKD/mPKDIH256UYr9V7dwqF6OW4+1AEAVSaY6iaCaJzjjAR2GV6bPBYEzHig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput-jquery.js"></script> -->
