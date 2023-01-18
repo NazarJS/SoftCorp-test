@@ -352,6 +352,8 @@
                 font-size: rem(14);
             }
 
+            
+
             &-input {
                 display: none;
             }
@@ -363,6 +365,8 @@
             }
 
             img {
+                width:20px;
+                height: 20px;
                 margin-right: 10px;
             }
             
@@ -407,10 +411,6 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-            }
-
-            &-value {
-    
             }
         }
 
