@@ -12,12 +12,8 @@
     })
 
     $(document).on("click", ".header-burger", function () {
-        if($(".toggle").hasClass("mobile-open")) {
-            $(".toggle").removeClass("mobile-open")
-        }
-        else {
-            $(".toggle").addClass("mobile-open")
-        }
+        $('.toggle').toggleClass('mobile-open');
+        $('body').toggleClass('body-hidden');
     });
 
 
@@ -43,7 +39,7 @@
             },
             name: {
               required: "Введите имя",
-              // lettersonlyName: "",
+              lettersonlyName: "Не корректное имя , можно вводить только буквы",
             },
             
           },
@@ -53,14 +49,15 @@
   
   
   
-      });
-      jQuery.validator.addMethod(
+    });
+
+    jQuery.validator.addMethod(
         "lettersonlyName",
         function (value, element) {
           return this.optional(element) || /^[a-zA-ZА-Яа-я\s]+$/i.test(value);
         },
         " "
-      );
+    );
 
 
 
@@ -68,7 +65,7 @@
       var output = document.getElementById("demo");
       output.innerHTML = slider.value; // Display the default slider value
 
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
+      // Update the current slider value (each time you drag the slider handle)
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
