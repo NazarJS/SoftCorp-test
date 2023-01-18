@@ -1,11 +1,3 @@
-// (function($) {
-//     $(function() {
-    
-//         $('select').styler();
-    
-//     });
-//     })(jQuery);
-
     $(document).ready(function () {
 
         $(".main-order-select , .main-order-range").styler();
@@ -15,6 +7,12 @@
         $('.toggle').toggleClass('mobile-open');
         $('body').toggleClass('body-hidden');
     });
+
+    $(document).on("click", ".jq-selectbox__dropdown", function () {
+      $('.main-order-select').blur();
+      
+  });
+
 
 
     $(document).ready(function () {
@@ -30,6 +28,11 @@
               required: true,
               lettersonlyName: true,
             },
+            select: {
+              required:true,
+              min:1,
+            },
+            
            
           },
           messages: {
@@ -39,7 +42,11 @@
             },
             name: {
               required: "Не корректное имя",
+              lettersonlyName: "Не корректное имя",
             },
+            select: {
+              required:"Выберите тип системы",
+            }
             
           },
           
@@ -49,7 +56,7 @@
     jQuery.validator.addMethod(
         "lettersonlyName",
         function (value, element) {
-          return this.optional(element) || /^ [a-zA-ZА-Яа-я\s,ё]+$/i.test(value);
+          return this.optional(element) || /^[a-zA-ZА-Яа-я\s,ё]+$/i.test(value);
         },
         " "
     );
