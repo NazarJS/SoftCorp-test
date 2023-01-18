@@ -109,32 +109,28 @@
         padding: 0 40px;
         margin: 0 -40px;
         background-color: #10101d;
-        transition: all 0.3s ease 0s;
+        text-align: center;
         position: fixed;
+        transition: all 0.3s ease;
+
+        ul {
+            padding-top: 30px;
+            li {
+                margin-bottom: 20px;
+                font-size: rem(20px);
+                list-style-type: none;
+            }
+        }
     }
 
     .mobile-open {
-        // opacity: 1;
+        opacity: 1;
 
         .header {
             &-mobile {
                 opacity: 1;
                 overflow-y: auto;
-                text-align: center;
                 visibility: visible;
-                
-                ul {
-                    padding-top: 30px;
-                    list-style-type: none;
-                    list-style: none;
-
-                    li {
-                        margin-bottom: 20px;
-                        font-size: rem(20px);
-                        list-style-type: none;
-                        list-style: none;
-                    }
-                }
             }
 
             &-burger {
