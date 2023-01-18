@@ -512,6 +512,7 @@
         }
 
         &__dropdown {
+<<<<<<< HEAD
         //     max-height: 180px;
         //     margin-top: -2px;
         //     padding-top: 2px;
@@ -524,6 +525,24 @@
         //     touch-action: auto;
             border: none;
         
+=======
+            max-height: 180px;
+            margin-top: -2px;
+            padding-top: 2px;
+            overflow: hidden;
+            overflow-y: auto;
+            background-color: #272733;
+            border: 1px solid #4a5a68bd;
+            border-top: none;
+            border-radius: 0;
+            touch-action: auto;
+
+            ul {
+                height: 100% !important;
+                max-height: none !important;
+                overflow-y: auto;
+            }
+>>>>>>> 07411bf107d92103a10a3d4cbe8f1a824cbcf6dc
 
             li {
                 padding-right: 10px;
@@ -555,6 +574,55 @@
             border-top: none;
           }
         }
+    }  
+    
+    .focused {
+        border: none;
+
+        .jq-selectbox__select {
+            border: none;
+        }
+<<<<<<< HEAD
+    }
+
+    .opened  {
+
+        .jq-selectbox__trigger-arrow {
+            transform: rotate(315deg);
+            top: 22px;
+        }
+
+        .jq-selectbox__select-text {
+            color: #ffffff;
+            background-color: #3D4050 !important;
+            border: 1px solid #4a5a68bd;
+            border-bottom: none;
+        }
+
+        .jq-selectbox__trigger-arrow {
+            border-top: 1px solid #ffffff !important;
+            border-right: 1px solid #ffffff !important;
+        }
+    }
+
+    .flex-wrap {
+        @media(max-width:1023px) {
+            max-width: 50%;
+            flex: 0 0 50%;
+            margin-bottom: 0;
+        }
+
+        @media(max-width:768px) {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+}
+
+    
+
+.jq-selectbox__dropdown ul::-webkit-scrollbar {
+=======
     }  
     
     .focused {
@@ -601,7 +669,8 @@
 
     
 
-.jq-selectbox__dropdown ul::-webkit-scrollbar {
+.jq-selectbox__dropdown::-webkit-scrollbar {
+>>>>>>> 07411bf107d92103a10a3d4cbe8f1a824cbcf6dc
     width: 7px;
     border-radius: 3px;
     background-color:#3d4050;
@@ -612,6 +681,7 @@
     border-radius: 3px;
 }
 
+<<<<<<< HEAD
 
 
 .jq-selectbox__dropdown ul::-webkit-scrollbar-button {
@@ -623,6 +693,16 @@
 //     background-color: red !important;
 // }
 
+=======
+// .jq-selectbox__dropdown::-webkit-scrollbar-thumb {
+//     background-color: red !important;
+// }
+
+.jq-selectbox__dropdown::-webkit-scrollbar-button {
+    display: none !important;
+}
+
+>>>>>>> 07411bf107d92103a10a3d4cbe8f1a824cbcf6dc
 // .jq-selectbox__dropdown::-webkit-scrollbar {
 //     width: 6px;
 //     height: 6px;
