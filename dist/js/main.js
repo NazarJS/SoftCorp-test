@@ -39,7 +39,7 @@
             },
             name: {
               required: "Введите имя",
-              lettersonlyName: "Не корректное имя , можно вводить только буквы",
+              lettersonlyName: "Не корректное имя",
             },
             
           },
@@ -54,7 +54,7 @@
     jQuery.validator.addMethod(
         "lettersonlyName",
         function (value, element) {
-          return this.optional(element) || /^[a-zA-ZА-Яа-я\s]+$/i.test(value);
+          return this.optional(element) || /^ [a-zA-ZА-Яа-я\s,ё]+$/i.test(value);
         },
         " "
     );
