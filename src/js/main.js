@@ -38,8 +38,13 @@
               email: "Введите корректный email",
             },
             name: {
+<<<<<<< HEAD
               required: "Не корректное имя",
               // lettersonlyName: "Не корректное имя",
+=======
+              required: "Введите имя",
+              lettersonlyName: "Не корректное имя",
+>>>>>>> d84e716776aa2cc17b0d36cff4e11f6a48f23b0f
             },
             
           },
